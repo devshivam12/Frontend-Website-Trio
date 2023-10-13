@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.logo {
+    width: 140px;
+}
+
+.bag {
+    cursor: pointer;
+    transition: 0.5s;
+} 
+
+.bag:hover {
+    transform: translateY(-4px);
+} 
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 50%;
+}
+
+.col-1 img {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.col-1 h1 {
+    line-height: 60px;
+    font-size: 40px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 8px 30px;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #7b261b;
+}
+
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+/* -----feature */
+
+.feature-product {
+    margin: 70px 0;
+}
+
+.small-container {
+    max-width: 1080px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto;
+}
+
+/* .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+.col-2 {
+    flex-basis: 30%;
+    cursor: pointer;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+.col-3 {
+    flex-basis: 250px;
+    padding: 10px;
+    max-width: 300px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    color: #555;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+
+.title::after {
+    content: '';
+    width: 80px;
+    height: 5px;
+    border-radius: 25px;
+    background: #ff523b;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-3 p {
+    font-size: 14px;
+}
+
+.rating {
+    color: #ff523b;
+}
+
+.col-3:hover {
+    transform: translateY(-5px);
+}
+
+/* <!-- ------offers --> */
+
+.offers {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+
+}
+
+.col-1 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
+/* ---testimonial */
+
+.testimonial {
+    margin-top: 80px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .col-3 img {
+    border-radius: 50%;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.quotes {
+    font-size: 30px;
+    color: #ff523b;
+}
+
+/* ---------brand */
+
+.brand {
+    margin: 100px auto;
+}
+
+.col-4 {
+    width: 140px;
+}
+
+.col-4 img {
+    width: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.col-4 img:hover {
+    filter: grayscale(0);
+}
+
+/* -------fotter */
+
+.footer {
+    margin-top: 100px;
+    background: black;
+    color: #555;
+    padding: 60px 0 50px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 140px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.footer-col-3,.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.footer hr {
+    background: grey;
+    height: 2px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.menu-bar {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* ------login page */
+
+.account-page{
+    margin-top: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.form-container{
+    background: white;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    color: #555;
+    padding: 0 10px;
+}
+.form-container form{
+    max-width: 300px;
+    position: absolute;
+    padding: 0 20px;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+.form-btn{
+    display: inline-block;
+}
+form .btn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#Loginform{
+    left: -300px;
+}
+#Loginform a{
+    font-size: 14px;
+}
+#Regform{
+    left: 0;
+}
+#Indecator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    margin-top: 10px;
+    height: 3px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+
+
+
+/* -------for second page */
+
+.row-2 {
+    justify-content: space-between;
+    margin: 100px 0 100px
+}
+
+select {
+    border: 1px solid #ff523b;
+    background: white;
+    padding: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.for-nxt-page {
+    margin: 0 auto 100px;
+}
+
+.for-nxt-page span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid #ff523b;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.for-nxt-page span:hover {
+    background: #ff523b;
+    outline: none;
+    color: white;
+}
+
+/* --------for third page */
+
+.single-product {
+    margin-top: 80px;
+}
+
+.single-product .col-1 img {
+    padding: 0;
+}
+
+.single-product .col-1 {
+    padding: 20px;
+}
+
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+}
+
+.single-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* ------cart details */
+
+.cart-page {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    background: #ff523b;
+    color: white;
+    padding: 5px;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+}
+
+div a {
+    text-decoration: none;
+    color: #ff523b;
+}
+
+.cart-info img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.total-prise {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-prise table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+
+/* -----------Resposiv website */
+
+@media only screen and (max-width:800px) {
+   
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: black;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+    .menu-bar{
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (max-width:600px){
+    .logo{
+        text-align: left;
+        align-items: left;
+        margin: 0 20px;
+    }
+    .cart{
+        margin: 0 7px;
+    }
+    .row{
+        text-align: center;
+    }
+
+    .col-4 img{
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .col-1, .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .account-page{
+        padding: 50px 0;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product h1{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .single-product p{
+        font-size: 14px;
+    }
+    .single-product h4{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register now and strat your journey on RedStore | E-commerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,800&family=Roboto+Slab:wght@300&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83a52a2b00.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" class="bag"></a>
+                
+            </nav>
+            <img src="images/menu.png" class="menu-bar" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+    <!-- ------acccount -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/image1.png" width="100%">
+                </div>
+                <div class="col-1">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="Login()">Login</span>
+                            <span onclick="Register()">Register</span>
+                            <hr id="Indecator">
+                        </div>
+
+                        <form id="Loginform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password </a>
+                        </form>
+
+                        <form id="Regform">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download our app for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our purpose is to sustainbility make the pleasure adn benifit of sport accessibile to the many.
+                    </p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Use full link</h3>
+                    <ul>
+                        <li>coupon</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Now</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Use full link</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>You-tube</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+                <hr>
+                <p>copyright 2003@ RedStore</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------js for the menubar -->
+
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+
+
+    <!-- -------js for images -->
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+        SmallImg[4].onclick = function () {
+            ProductImg.src = SmallImg[4].src;
+        }
+    </script>
+
+
+    <!-- -----js for login form -->
+
+    <script>
+
+        var Loginform = document.getElementById('Loginform');
+        var Regform = document.getElementById('Regform');
+        var Indecator = document.getElementById('Indecator');
+
+        function Register() {
+            Regform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+            Indecator.style.transform = "translateX(100px)";
+        }
+        function Login() {
+            Regform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+            Indecator.style.transform = "translateX(0px)";
+        }
+    </script>
+</body>
+
+</html>
